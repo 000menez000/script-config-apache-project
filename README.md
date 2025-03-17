@@ -10,10 +10,14 @@
 
 ### Passo 2:
 - No terminal, execute o comando abaixo para dar permissão de execução ao script:
+```bash
 chmod +x setup.sh
 chmod +x restore_apache.sh
+```
 
 ### Passo 3:
 - Para rodar os scripts, utilize:
-`sudo ./setup.sh
-`sudo ./restore_apache.sh
+```bash
+sudo ./setup.sh
+sudo ./restore_apache.sh
+```
