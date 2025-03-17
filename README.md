@@ -15,5 +15,5 @@ chmod +x restore_apache.sh
 
 ### Passo 3:
 - Para rodar os scripts, utilize:
-sudo ./setup.sh
-sudo ./restore_apache.sh
+`sudo ./setup.sh
+`sudo ./restore_apache.sh
