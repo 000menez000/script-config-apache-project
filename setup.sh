@@ -20,10 +20,10 @@ fi
 echo "🔄 Configurando o Apache para apontar para: $PROJECT_PATH"
 sed -i "s|DocumentRoot .*|DocumentRoot $PROJECT_PATH|g" "$APACHE_CONF"
 
-# Define permissões corretas
-echo "🔒 Ajustando permissões..."
-chown -R www-data:www-data "$(pwd)"
-chmod -R 755 "$(pwd)"
+# Define permissões corretas apenas para a pasta `public`
+echo "🔒 Ajustando permissões para o Apache..."
+chown -R $USER:www-data "$PROJECT_PATH"
+chmod -R 755 "$PROJECT_PATH"
 
 # Reinicia o Apache para aplicar as mudanças
 echo "🔄 Reiniciando o Apache..."
